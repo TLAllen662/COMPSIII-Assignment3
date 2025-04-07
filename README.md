@@ -1,4 +1,4 @@
-# COMPS III: Assignment #2 - `Person`, `Staff`, and `Student` Classes
+# COMPS III: Assignment #3 - `Person`, `Staff`, and `Student` Classes
 
 ## Instructions
 **TASK**: In this assignment, you will expand on your understanding of Python classes, objects, methods, and attributes to further explore inheritance. You will create a parent `Person` class similar to last week and then two additional child classes (`Student` and `Staff`) that inherit attributes and methods from the parent class.
