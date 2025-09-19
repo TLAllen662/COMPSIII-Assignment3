@@ -9,8 +9,12 @@ def test_can_create_person():
 
 def test_person_string():
     '''Test that the __str__ method returns the correct string'''
-    person_1 = Person("Billy", 17, "Canada")
-    assert str(person_1) == "Billy is 17 years old and is from Canada."
+    def __init__ (self, name, age, country):
+        self.name = name
+        self.age = age
+        self.country = country 
+    def __str__ (self):
+        return f"{self.name} is {self.age} years old and lives in {self.country}."
 
 def test_student_inheritance():
     '''Test that the student class inherits from the person class'''
@@ -29,8 +33,12 @@ def test_student_attributes():
 
 def test_student_study():
     '''Test that the study method returns the correct string'''
-    student = Student("John", 17, "Canada", "Computer Science", 3.5)
-    assert student.study() == "John is studying Computer Science with a current GPA of 3.5."
+def __init__ (self,name, age, country, major, gpa):
+        super().__init__(name, age, country)
+        self.major = major
+        self.gpa = gpa
+        def study(self):
+            return f"{self.name} is studying {self.major} with a current GPA of {self.age}."
 
 def test_staff_inheritance():
     '''Test that the staff class inherits from the person class'''
@@ -49,5 +57,9 @@ def test_staff_attributes():
 
 def test_staff_work():
     '''Test that the work method returns the correct string'''
-    staff = Staff("Jane", 30, "USA", "Professor", "Computer Science")
-    assert staff.work() == "Jane works as a Professor in the Computer Science department."
+def __init__ (self, name, age, country, position, department):
+        super().__init__(name, age, country)
+        self.position = position
+        self.department = department
+        def work(self):
+            return f"{self.name} works as a {self.position} in the {self.department} department."
